@@ -1,0 +1,87 @@
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+    padding-bottom: 8px;
+    border-bottom:1px solid #9B9B9B;
+    margin-bottom: 24px;
+}
+
+.cardInner{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.cardIcon{
+    background: #D9D9D9;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+}
+
+.cardInfo h5{
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000;
+}
+
+.cardInfo p{
+    font-size: 1rem;
+    color: #9B9B9B;
+}
+
+.cardPrice{
+    color: #F4BB4A;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.cardButtonWrapper{
+    display: flex;
+    gap: 8px;
+}
+
+.cardButtonWrapper button{
+    border-radius: 15px;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    font-size: 1.4rem;
+}
+
+.cardDelete{
+    background: #ff3e3e;
+}
+.cardEdit{
+    background: #F4BB4A;
+}
+
+@media(max-width:767px){
+    .card{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .cardInner{
+        gap: 12px;
+    }
+    .cardInner:last-child{
+        padding-left: 3.3rem;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .cardButtonWrapper button{
+        font-size: 1.2rem;
+        padding: 8px;
+        border-radius: 0.5rem;
+    }
+
+    .cardInfo p{
+        font-size: 12px;
+    }
+}
